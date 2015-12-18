@@ -21,12 +21,14 @@ module.exports = function(grunt) {
   var SRC_DIR_JS = SRC_DIR + 'js/';
   var SRC_DIR_LESS = SRC_DIR + 'less/';
   var SRC_DIR_HTML = SRC_DIR;
+  var SRC_DIR_CSS = SRC_DIR + 'css/';
   var SRC_FILES_IMG = SRC_DIR + 'img/*';
   var SRC_FILES_ASS = SRC_DIR + 'assets/**/**/*';
   var SRC_FILES_JS = SRC_DIR_JS + ['*.js', '**/*.js'];
   var SRC_FILE_LESS = SRC_DIR_LESS + 'style.less';
   var SRC_FILES_LESS = SRC_DIR_LESS + '*.less';
   var SRC_FILES_HTML = SRC_DIR_HTML + '*.html';
+  var SRC_FILES_CSS = SRC_DIR_CSS + '*.css';
 
   var AP_BROWSERS = [
         'Android 2.3',
@@ -191,6 +193,11 @@ module.exports = function(grunt) {
       html: {
         options: { livereload: true },
         files: [SRC_FILES_HTML],
+        tasks: ['copy']
+      },
+      css: {
+        options: { livereload: true },
+        files: [SRC_FILES_CSS],
         tasks: ['copy']
       },
       img: {

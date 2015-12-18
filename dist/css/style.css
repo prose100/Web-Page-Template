@@ -69,6 +69,20 @@
 /* ---------------------------------------------
       Slider
    --------------------------------------------- */
+.slide-left {
+  float: left;
+  margin: 0px 60px 0px 150px;
+}
+.slide-left .product-info {
+  display: inline-block;
+  width: 465px;
+  float: left;
+  margin-bottom: 40px;
+}
+.slide-left .ipad-sm-1 {
+  float: left;
+  margin-right: 10px;
+}
 /* ---------------------------------------------
       Footer
    --------------------------------------------- */
