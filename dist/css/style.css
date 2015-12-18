@@ -71,17 +71,18 @@
    --------------------------------------------- */
 .slide-left {
   float: left;
-  margin: 0px 60px 0px 150px;
+  margin-left: 150px;
+  margin-right: 25px;
+  max-width: 40%;
 }
 .slide-left .product-info {
-  display: inline-block;
-  width: 465px;
   float: left;
   margin-bottom: 40px;
 }
 .slide-left .ipad-sm-1 {
   float: left;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 /* ---------------------------------------------
       Footer
@@ -112,6 +113,30 @@ footer {
 
    Also, may modify and just make breakpoints where site goes wrong.
 --------------------------------------------*/
+@media all and (max-width: 991px) {
+  .ipad-sm {
+    display: none;
+  }
+  .slide-left {
+    float: left;
+    margin-left: 100px;
+    margin-right: 0px;
+    max-width: 70%;
+  }
+  .slide-right {
+    margin-left: 120px;
+  }
+}
+@media all and (max-width: 600px) {
+  .slide-left {
+    float: left;
+    margin-left: 40px;
+    max-width: 80%;
+  }
+  .slide-right {
+    margin-left: 50px;
+  }
+}
 /*-------------------------------------------------------------------------------*/
 /* Portrait */
 @media screen and (orientation: portrait) {
