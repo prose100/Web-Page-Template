@@ -88,8 +88,11 @@
       Content
    --------------------------------------------- */
 .content {
+  margin-top: 25px;
   background: url('../img/content-bg.png');
   font-family: 'Droid Serif', serif;
+  padding-top: 40px;
+  padding-bottom: 60px;
 }
 .content h2 {
   color: #fff;
@@ -100,7 +103,7 @@
 .content .company {
   float: left;
   width: 60%;
-  margin-right: 25px;
+  margin-right: 50px;
 }
 .content .company p {
   color: #ececec;
@@ -142,6 +145,23 @@
 /* ---------------------------------------------
       Footer
    --------------------------------------------- */
+footer {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 30px 0px;
+}
+footer .footer-left {
+  float: left;
+}
+footer .footer-right {
+  float: right;
+  margin-bottom: 15px;
+}
+footer .footer-right li {
+  display: inline-block;
+  margin-right: 25px;
+}
 /* ---------------------------------------------
       UpScroll
    --------------------------------------------- */
@@ -165,27 +185,42 @@
    Also, may modify and just make breakpoints where site goes wrong.
 --------------------------------------------*/
 @media all and (max-width: 991px) {
-  .ipad-sm {
+  .flexslider .ipad-sm {
     display: none;
   }
-  .slide-left {
+  .flexslider .slide-left {
     float: left;
     margin-left: 100px;
     margin-right: 0px;
     max-width: 70%;
   }
-  .slide-right {
+  .flexslider .slide-right {
     margin-left: 120px;
+  }
+  .content .company,
+  .content .blog {
+    left: 15%;
+    position: relative;
+  }
+  footer .footer-right {
+    float: none;
+  }
+  footer .footer-right ul {
+    text-align: center;
+  }
+  footer .footer-left {
+    float: none;
+    text-align: center;
   }
 }
 @media all and (max-width: 600px) {
-  .slide-left {
+  .flexslider .slide-left {
     float: left;
-    margin-left: 40px;
-    max-width: 80%;
+    margin-left: 20px;
+    max-width: 90%;
   }
-  .slide-right {
-    margin-left: 50px;
+  .flexslider .slide-right {
+    margin-left: 0px;
   }
 }
 /*-------------------------------------------------------------------------------*/
